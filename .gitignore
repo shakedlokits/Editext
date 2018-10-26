@@ -1,0 +1,10 @@
+#directories
+node_modules
+out
+.eslintcache
+node_modules
+dist
+
+#files
+*.tgz
+*.log

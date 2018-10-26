@@ -1,0 +1,21 @@
+#sidebar {
+  margin-left: auto;
+}
+
+#controls {
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+}
+
+#controls button {
+  width: 100%;
+}
+
+#controls button:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+#file-list li input {
+  margin-right: 10px;
+}

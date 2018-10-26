@@ -1,0 +1,29 @@
+/* #counter {
+  display: inline;
+  float: right;
+}
+
+#app {
+  display: flex;
+} */
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+
+#app {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transform: translateY(40%);
+}
+
+.rc-progress-line {
+  padding: 0 20%;
+  max-width: 100%;
+}
+
+#loading h4 {
+  text-align: center;
+  font-size: 2vw;
+}
