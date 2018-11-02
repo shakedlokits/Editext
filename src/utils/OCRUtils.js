@@ -3,10 +3,14 @@ import fs from 'fs';
 
 export function parseFile(imagePath, callback, progress) {
   console.group('Parsing file.');
+  console.log(imagePath);
   Tesseract.recognize(imagePath, { lang: 'heb' })
-  .progress(progress).then(callback).finally(() => {
+  .progress(progress).then(callback)
+  .catch(err => console.error(err))
+  .finally(() => {
     console.groupEnd();
     progress(null);
+    // Tesseract.terminate();
   });
 }
 

@@ -1,7 +1,7 @@
 {
   "name": "editext",
   "productName": "Editext",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Book OCR text editor.",
   "main": "src/index.js",
   "scripts": {
@@ -22,15 +22,12 @@
         ],
         "darwin": [
           "zip"
-        ],
-        "linux": [
-          "deb",
-          "rpm"
         ]
       },
       "electronPackagerConfig": {
         "packageManager": false,
-        "icon": "src/static/icons/logo.png.icns"
+        "icon": "src/static/icons/logo.png.icns",
+        "asar": true
       },
       "electronWinstallerConfig": {
         "name": "Editext"
@@ -38,13 +35,26 @@
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},
       "github_repository": {
-        "owner": "",
-        "name": ""
+        "owner": "shakedlokits",
+        "name": "Editext"
+      },
+      "publish_targets": {
+        "win32": [
+          "github"
+        ],
+        "darwin": [
+          "github"
+        ]
       },
       "windowsStoreConfig": {
         "packageName": "",
         "name": "Editext"
-      }
+      },
+      "plugins": [
+        [
+          "@electron-forge/plugin-auto-unpack-natives"
+        ]
+      ]
     }
   },
   "dependencies": {
@@ -53,23 +63,31 @@
     "electron-compile": "^6.4.3",
     "electron-devtools-installer": "^2.1.0",
     "electron-squirrel-startup": "^1.0.0",
+    "jimp": "^0.5.6",
     "rc-progress": "^2.2.6",
     "react": "^15.6.2",
     "react-desktop": "^0.3.7",
     "react-dom": "^15.6.2",
-    "react-hot-loader": "^3.0.0-beta.6"
+    "react-hot-loader": "^3.0.0-beta.6",
+    "temp": "^0.8.3"
   },
   "devDependencies": {
+    "@electron-forge/plugin-auto-unpack-natives": "^6.0.0-beta.22",
     "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-plugin-transform-es2015-classes": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "electron-builder": "^20.29.0",
     "electron-forge": "^5.2.2",
+    "electron-prebuilt": "^1.4.13",
     "electron-prebuilt-compile": "3.0.2",
+    "electron-rebuild": "^1.8.2",
+    "electron-webpack": "^2.3.1",
     "eslint": "^3",
     "eslint-config-airbnb": "^15",
     "eslint-plugin-import": "^2",
     "eslint-plugin-jsx-a11y": "^5",
-    "eslint-plugin-react": "^7"
+    "eslint-plugin-react": "^7",
+    "webpack": "^4.23.1"
   }
 }

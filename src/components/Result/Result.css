@@ -1,29 +1,3 @@
-/* #result {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  height: 100vh;
-}
-
-#result .DraftEditor-root {
-  white-space: pre-line;
-  direction: rtl;
-  flex: 1 1 auto;
-}
-
-#result .public-DraftEditor-content {
-  overflow: auto;
-  max-height: 100vh;
-}
-
-#result #preview {
-  max-width: 50%;
-  max-height: 100%;
-  height: auto;
-  flex: 1 1 auto;
-  object-fit: contain;
-}
-*/
 #editor {
   white-space: pre-line;
   direction: rtl;
@@ -32,6 +6,14 @@
   padding: 16pt;
 }
 
+#preview-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
 #preview {
+  width: 100%;
   object-fit: contain;
 }

@@ -1,15 +1,23 @@
 #sidebar {
   margin-left: auto;
+  border-left: 1px solid #0000002e;
 }
 
 #controls {
   position: fixed;
   bottom: 0;
   padding: 10px;
+  border-top: 1px solid #0000002e;
+  background-color: #f1f1f1;
 }
 
 #controls button {
   width: 100%;
+}
+
+.control-checkbox p {
+  float: right;
+  margin-left: 10px;
 }
 
 #controls button:not(:last-child) {

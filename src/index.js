@@ -39,9 +39,9 @@ const createWindow = async () => {
     webPreferences: {
       webSecurity: false,
     },
-    icon: path.join(__dirname, 'static/icons/64x64.png'),
+    icon: path.join(__dirname, 'static/icons/logo.png.ico'),
   });
-  // mainWindow.webContents.openDevTools();
+  mainWindow.webContents.openDevTools();
 
   // and load the index.html of the app.
   mainWindow.loadURL(`file://${__dirname}/index.html`);
