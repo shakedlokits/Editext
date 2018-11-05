@@ -1,4 +1,4 @@
-# Editext
+# Editext✒
 
 Editext is a simple OCR text editor. Need to scan a large volume? Use Editext to manage your files, save backups and make changes in real-time!🎉
 
