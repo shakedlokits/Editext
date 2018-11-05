@@ -1,7 +1,7 @@
 {
   "name": "editext",
   "productName": "Editext",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Book OCR text editor.",
   "main": "src/index.js",
   "scripts": {
@@ -80,7 +80,7 @@
     "electron-builder": "^20.29.0",
     "electron-forge": "^5.2.2",
     "electron-prebuilt": "^1.4.13",
-    "electron-prebuilt-compile": "3.0.2",
+    "electron-prebuilt-compile": "3.0.6",
     "electron-rebuild": "^1.8.2",
     "electron-webpack": "^2.3.1",
     "eslint": "^3",
